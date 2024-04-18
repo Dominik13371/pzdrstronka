@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter Jednostek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kontener">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Konwerter jednostek długości</legend><br>
+            <label id="naglowek">Podaj długość:</label>
+            <input type="text" id="liczba" name="konwertuj" />
+            <div id="polaWyboru">
+              <label id="jednostki">z</label>
+              <select id="jednostkiA">
+                <option value="mm">mm</option>
+                <option value="cm" selected>cm</option>
+                <option value="dm">dm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+              </select>
+              <label class="jednostki">na</label>
+              <select id="jednostkiB">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="dm">dm</option>
+                <option value="m" selected>m</option>
+                <option value="km">km</option>
+              </select>
+            </div>
+          </fieldset>
+        </form>
+        <div id="wynik">
+          <p>Wynik:</p><span>...</span></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
